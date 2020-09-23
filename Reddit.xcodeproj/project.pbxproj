@@ -15,6 +15,9 @@
 		6C50F340251BAEB5003908B3 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C50F33F251BAEB5003908B3 /* Post.swift */; };
 		6C50F344251BB53A003908B3 /* PostController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C50F343251BB53A003908B3 /* PostController.swift */; };
 		6C50F347251BB6B6003908B3 /* PostError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C50F346251BB6B6003908B3 /* PostError.swift */; };
+		6C50F34C251BE47D003908B3 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C50F34B251BE47D003908B3 /* PostTableViewCell.swift */; };
+		6C50F350251BE94C003908B3 /* PostListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C50F34F251BE94C003908B3 /* PostListTableViewController.swift */; };
+		6C50F353251BEF83003908B3 /* ErrorActionSheetExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C50F352251BEF83003908B3 /* ErrorActionSheetExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		6C50F33F251BAEB5003908B3 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		6C50F343251BB53A003908B3 /* PostController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostController.swift; sourceTree = "<group>"; };
 		6C50F346251BB6B6003908B3 /* PostError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostError.swift; sourceTree = "<group>"; };
+		6C50F34B251BE47D003908B3 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		6C50F34F251BE94C003908B3 /* PostListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListTableViewController.swift; sourceTree = "<group>"; };
+		6C50F352251BEF83003908B3 /* ErrorActionSheetExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorActionSheetExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,7 +97,7 @@
 		6C50F337251BAA51003908B3 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				6C50F34A251BE3F9003908B3 /* New Group */,
+				6C50F34A251BE3F9003908B3 /* Custom Views */,
 				6C50F33E251BAA94003908B3 /* Storyboards */,
 			);
 			path = Views;
@@ -110,6 +116,7 @@
 		6C50F339251BAA60003908B3 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				6C50F34F251BE94C003908B3 /* PostListTableViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -126,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				6C50F346251BB6B6003908B3 /* PostError.swift */,
+				6C50F352251BEF83003908B3 /* ErrorActionSheetExtension.swift */,
 			);
 			path = "Helpers and Extensions";
 			sourceTree = "<group>";
@@ -138,11 +146,12 @@
 			path = Storyboards;
 			sourceTree = "<group>";
 		};
-		6C50F34A251BE3F9003908B3 /* New Group */ = {
+		6C50F34A251BE3F9003908B3 /* Custom Views */ = {
 			isa = PBXGroup;
 			children = (
+				6C50F34B251BE47D003908B3 /* PostTableViewCell.swift */,
 			);
-			path = "New Group";
+			path = "Custom Views";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,11 +224,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C50F353251BEF83003908B3 /* ErrorActionSheetExtension.swift in Sources */,
 				6C50F347251BB6B6003908B3 /* PostError.swift in Sources */,
 				6C50F340251BAEB5003908B3 /* Post.swift in Sources */,
+				6C50F350251BE94C003908B3 /* PostListTableViewController.swift in Sources */,
 				6C50F344251BB53A003908B3 /* PostController.swift in Sources */,
 				6C50F320251BAA15003908B3 /* AppDelegate.swift in Sources */,
 				6C50F322251BAA15003908B3 /* SceneDelegate.swift in Sources */,
+				6C50F34C251BE47D003908B3 /* PostTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

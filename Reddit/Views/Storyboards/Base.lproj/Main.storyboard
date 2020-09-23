@@ -10,13 +10,13 @@
         <!--Root View Controller-->
         <scene sceneID="y6T-cx-7Nu">
             <objects>
-                <tableViewController id="6fG-yf-9eX" sceneMemberID="viewController">
+                <tableViewController id="6fG-yf-9eX" customClass="PostListTableViewController" customModule="Reddit" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="eL5-Yd-JGZ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="mhd-2O-KN8">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="postCell" id="mhd-2O-KN8" customClass="PostTableViewCell" customModule="Reddit" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="169.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mhd-2O-KN8" id="weU-uK-nnA">
@@ -62,6 +62,11 @@
                                         <constraint firstItem="fPa-0N-cIi" firstAttribute="top" secondItem="weU-uK-nnA" secondAttribute="top" constant="8" id="sfV-2g-2h5"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="thumbnailImageView" destination="JiT-nH-rcE" id="KuM-Yj-GMp"/>
+                                    <outlet property="titleLabel" destination="Whg-Rj-lIP" id="CA3-LN-TdK"/>
+                                    <outlet property="upvoteLabel" destination="9o4-Xe-0K0" id="vqs-3w-eRO"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
