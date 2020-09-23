@@ -91,6 +91,7 @@
 		6C50F337251BAA51003908B3 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				6C50F34A251BE3F9003908B3 /* New Group */,
 				6C50F33E251BAA94003908B3 /* Storyboards */,
 			);
 			path = Views;
@@ -135,6 +136,13 @@
 				6C50F325251BAA15003908B3 /* Main.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		6C50F34A251BE3F9003908B3 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
